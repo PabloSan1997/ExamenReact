@@ -1,0 +1,74 @@
+.formulario {
+  box-shadow: 0 0 5px rgb(17, 17, 150);
+  border-radius: 10px;
+  width: 70%;
+  height: 290px;
+  margin: 10px auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.formulario .fila {
+  width: 90%;
+  margin: 10px auto;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.formulario .fila.fila2 .area {
+  width: 90.5%;
+  display: flex;
+  margin: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.formulario .fila.fila2 .area input#num {
+  width: 10%;
+}
+.formulario .fila.fila2 .area input#res {
+  width: 89%;
+  margin: auto auto auto 1%;
+}
+.formulario .fila .entrada {
+  outline: none;
+  background: rgb(26, 26, 105);
+  border: none;
+  padding: 1px 3px;
+  color: white;
+  font-size: 1.1rem;
+  width: 90%;
+  margin: auto;
+}
+.formulario .areaboton {
+  width: 70%;
+  height: 10%;
+  margin: 0 auto;
+  display: flex;
+}
+.formulario .areaboton .boton {
+  border: 3px solid rgb(9, 7, 163);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2px 0;
+  width: 30%;
+  margin: auto;
+  font-size: 1rem;
+  background: rgb(162, 162, 255);
+  border-radius: 10px;
+  color: rgb(0, 0, 22);
+  cursor: pointer;
+}
+.formulario .areaboton .boton:hover {
+  transition: all 0.2s ease;
+  background: rgb(9, 7, 163);
+  color: rgb(162, 162, 255);
+}
+.formulario label {
+  color: rgb(218, 218, 253);
+  font-size: 1.2rem;
+}/*# sourceMappingURL=index.css.map */

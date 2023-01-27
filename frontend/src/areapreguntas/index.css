@@ -1,0 +1,96 @@
+.contenedor {
+  width: 90%;
+  margin: 50px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor h1 {
+  width: 100%;
+  background: rgb(6, 20, 85);
+  text-align: center;
+  color: rgb(205, 205, 250);
+  border-radius: 10px;
+  margin: 0 0 5px 0;
+}
+.contenedor .mensaje {
+  width: 90%;
+  color: rgb(255, 255, 255);
+  margin: 10px auto;
+  font-size: 1.2rem;
+}
+.contenedor .filaP {
+  width: 100%;
+  margin: 10px auto 0 auto;
+  border: 2px groove rgb(37, 0, 158);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.contenedor .filaP.rojo {
+  border: 2px groove rgb(122, 21, 13);
+}
+.contenedor .filaP.rojo .cajaP {
+  background: rgb(53, 2, 2);
+}
+.contenedor .filaP.rojo .cajaP .areaboton2 .boton {
+  background: rgb(136, 9, 9);
+  border: 3px solid rgb(70, 7, 7);
+  color: rgb(248, 185, 185);
+}
+.contenedor .filaP.rojo .cajaP .areaboton2 .boton:hover {
+  background: rgb(70, 7, 7);
+  color: rgb(247, 210, 210);
+}
+.contenedor .filaP.rojo .cajaR {
+  background: rgb(97, 0, 0);
+}
+.contenedor .filaP.rojo .cajaR p {
+  color: rgb(252, 199, 199);
+}
+.contenedor .filaP .cajaR {
+  width: 100%;
+  background: rgb(8, 69, 160);
+  color: rgb(5, 1, 43);
+  display: flex;
+  flex-direction: column;
+}
+.contenedor .filaP .cajaR p {
+  width: 100%;
+  border-bottom: 1px solid rgb(3, 3, 39);
+  margin: 2px auto auto;
+  font-size: 1.5rem;
+  padding: 0 0 0 5px;
+}
+.contenedor .filaP .cajaP {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  background: rgb(6, 20, 85);
+}
+.contenedor .filaP .cajaP .Pregunta {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1.4rem;
+  color: white;
+  margin: auto auto auto 1%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contenedor .filaP .cajaP .areaboton2 {
+  height: 100%;
+  width: 8%;
+  display: flex;
+}
+.contenedor .filaP .cajaP .areaboton2 .boton {
+  margin: auto;
+  padding: 0 2px;
+  border: 3px solid rgb(9, 7, 163);
+  background: rgb(29, 25, 221);
+  color: rgb(162, 162, 255);
+  cursor: pointer;
+}
+.contenedor .filaP .cajaP .areaboton2 .boton:hover {
+  background: rgb(162, 162, 255);
+  color: rgb(9, 7, 163);
+}/*# sourceMappingURL=index.css.map */
