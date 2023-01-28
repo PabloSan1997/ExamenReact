@@ -2,7 +2,7 @@ import React from "react";
 import { Pcontexto } from "../ContextoPreguntas";
 import "./index.css"
 function AreaFormulario(){
-    const{setEntrada1,setEntrada2,setEntrada3, enviarPregunta, agregarRespuesta, setMostrar}=React.useContext(Pcontexto);
+    const{setEntrada1,setEntrada2,setEntrada3, enviarPregunta, agregarRespuesta, setMostrar, entrada2}=React.useContext(Pcontexto);
     function escribir1(event){
         setEntrada1(event.target.value);
     }
@@ -29,7 +29,7 @@ function AreaFormulario(){
             <div className="fila fila2">
                 <label>Agregar respuesta</label>
                <div className="area">
-               <input className="entrada" id="num" placeholder="#" onChange={escribir2}/>
+               <input className="entrada" id="num" placeholder="#" onChange={escribir2} value={entrada2}/>
                 <input className="entrada" id="res" placeholder="Respuesta" onChange={escribir3}/>
                </div>
             </div>

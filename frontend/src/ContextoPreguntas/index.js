@@ -36,7 +36,7 @@ function Proveedor(props){
                 headers:{'Content-Type':'application/json'},
                 body:JSON.stringify(
                     {
-                        preg:entrada1,
+                        preg:!entrada1?'':entrada1,
                         respuestas:[]
                     }
                 )

@@ -2,7 +2,7 @@ import React from "react";
 import { Pcontexto } from "../ContextoPreguntas";
 import "./index.css"
 function AreaPreguntas() {
-  const { datos, datoss } = React.useContext(Pcontexto);
+  const { datos, datoss} = React.useContext(Pcontexto);
 console.log(datos.message);
   return (
     <div className="contenedor">
@@ -32,20 +32,23 @@ console.log(datos.message);
 }
 function Filas(props) {
   let mira = 0;
-  const {estadoPregunta, borrarUno}=React.useContext(Pcontexto);
+  const {estadoPregunta, borrarUno, setEntrada2}=React.useContext(Pcontexto);
   function cambiar(){
     estadoPregunta(props.numero,!props.estado);
   }
   function borrar(){
     borrarUno(props.numero);
   }
-
+  function poner(){
+    setEntrada2(props.numero);
+  }
   return (
     <div className={props.estado?'filaP rojo':'filaP'}>
       <div className="caja cajaP">
         <p className="Pregunta">{`${props.numero}.- ${props.preguntas}`}</p>
         <div className="areaboton2">
         <button className="boton" onClick={cambiar}>{props.estado?'Bien':'Mal'}</button>
+        <button className="boton" onClick={poner}>P</button>
         <button className="boton" onClick={borrar}>X</button>
         </div>
       </div>
