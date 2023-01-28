@@ -128,12 +128,14 @@ async function borrarUno(num){
         alert(error);
     }
 }
+
 React.useEffect(
     ()=>{
-        if(datoss!=2 && datoss!=3){
+        if(datoss!=2 && datoss!=3 && datoss.statusCode!=404){
             if(entrada2===''){
                 setdatos(datoss);
-            }else{
+            }
+            else if(datoss.message!=404){
                 let nose = datoss;
                 let indice = nose.findIndex(elemento=>elemento.id==entrada2);
                 if(indice===-1){
@@ -142,11 +144,12 @@ React.useEffect(
                     setdatos([nose[indice]]);
                 }
             }
-            
+        }else{
+            setdatos(datoss);
         }
         
     }
-    ,[entrada2, datoss.length]);
+    ,[entrada2, datoss, datoss.statusCode]);
     return (
         <Pcontexto.Provider
         value={{
@@ -163,7 +166,8 @@ React.useEffect(
             estadoPregunta,
             borrarUno,
             mostrar, 
-            setMostrar
+            setMostrar,
+            datoss
         }}
         >
             {props.children}

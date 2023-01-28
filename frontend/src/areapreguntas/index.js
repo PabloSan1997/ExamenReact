@@ -2,17 +2,18 @@ import React from "react";
 import { Pcontexto } from "../ContextoPreguntas";
 import "./index.css"
 function AreaPreguntas() {
-  const { datos } = React.useContext(Pcontexto);
+  const { datos, datoss } = React.useContext(Pcontexto);
+console.log(datos.message);
   return (
     <div className="contenedor">
       <h1 className="titulo">Examen</h1>
-      {(datos.statusCode === 404 && (
+      {((datos.statusCode === 404)  && (
         <p className="mensaje">{datos.message}</p>
       )) ||
-        (datos == 3 && (
+        (datoss == 3 && (
           <p className="mensaje">Problemas con conectar con el servidor</p>
         )) ||
-        (datos === 2 && <p className="mensaje">Cargando...</p>)}
+        (datoss === 2 && <p className="mensaje">Cargando...</p>)}
 
         {(datos!=2 && datos!=3 && datos.statusCode!=404)?
           datos.map((elemento) => (
