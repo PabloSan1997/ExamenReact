@@ -58,7 +58,8 @@
   border-bottom: 1px solid rgb(3, 3, 39);
   margin: 2px auto auto;
   font-size: 1.5rem;
-  padding: 0 0 0 5px;
+  padding: 0 0 0 10px;
+  font-size: 1.2rem;
 }
 .contenedor .filaP .cajaP {
   width: 100%;
@@ -70,7 +71,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: white;
   margin: auto auto auto 1%;
   width: -webkit-fit-content;
