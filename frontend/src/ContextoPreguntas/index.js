@@ -3,30 +3,32 @@ import React from "react";
 const Pcontexto = React.createContext();
 
 function useLlamar(){
-    const [datos, setDatos]=React.useState(2);
+    const [datoss, setDatoss]=React.useState(2);
     React.useEffect(
        ()=>{
         (async function(){
             try{
                 const archivo = await fetch('http://localhost:4120/api/v1/preguntas');
                 const texto = await archivo.json();
-                setDatos(texto);
+                setDatoss(texto);
             }catch(err){
-                setDatos(3);
+                setDatoss(3);
             }
         })();
        }
         ,[]);
-        return {datos};
+        return {datoss};
 }
 
 
 function Proveedor(props){
-    const {datos}=useLlamar();
+    const {datoss}=useLlamar();
     const [entrada1, setEntrada1]=React.useState('');
     const [entrada2, setEntrada2]=React.useState('');
     const [entrada3, setEntrada3]=React.useState('');
     const [mostrar, setMostrar]=React.useState(false);
+    const [datos, setdatos] =React.useState(datoss);
+    
     async function enviarPregunta(){
         try{
             let soliditud = {
@@ -126,6 +128,25 @@ async function borrarUno(num){
         alert(error);
     }
 }
+React.useEffect(
+    ()=>{
+        if(datoss!=2 && datoss!=3){
+            if(entrada2===''){
+                setdatos(datoss);
+            }else{
+                let nose = datoss;
+                let indice = nose.findIndex(elemento=>elemento.id==entrada2);
+                if(indice===-1){
+                    setdatos(nose);
+                }else{
+                    setdatos([nose[indice]]);
+                }
+            }
+            
+        }
+        
+    }
+    ,[entrada2, datoss.length]);
     return (
         <Pcontexto.Provider
         value={{
