@@ -54,6 +54,7 @@ pregRouter.delete("/", async (req, res, next) => {
     next(error);
   }
 });
+
 pregRouter.delete("/:id", async (req, res, next) => {
   const { id } = req.params;
   try {
@@ -63,6 +64,7 @@ pregRouter.delete("/:id", async (req, res, next) => {
     next(error);
   }
 });
+
 //---------------------------------------------------------
 
 //---------patch-------------------------------

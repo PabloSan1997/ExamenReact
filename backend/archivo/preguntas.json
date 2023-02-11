@@ -1,1 +1,88 @@
-{"preguntitas":[]}
+{
+    "preguntitas": [
+        {
+            "id": 1,
+            "estado": true,
+            "preg": "¿Cuál de las afirmaciones es INCORRECTA sobre los estados derivados?",
+            "respuestas": [
+                "Se actualizan automáticamente con los cambios a los estados \"normales\".",
+                "Pueden tener la misma convención de nombres que los estados \"normales\"."
+            ]
+        },
+        {
+            "id": 2,
+            "estado": false,
+            "preg": "¿Cuál es la técnica más popular para crear un reducer?",
+            "respuestas": [
+                "Switch"
+            ]
+        },
+        {
+            "id": 3,
+            "estado": false,
+            "preg": "¿Qué parámetros recibe un reducer?",
+            "respuestas": [
+                "state y action (un objeto con type y payload)"
+            ]
+        },
+        {
+            "id": 4,
+            "estado": false,
+            "preg": "Ningún paradigma es mejor que otro. Debemos analizar sus beneficios y costos para determinar si vale la pena implementarlos.",
+            "respuestas": [
+                "Verdadero"
+            ]
+        },
+        {
+            "id": 5,
+            "estado": true,
+            "preg": "¿Cuál de los siguientes métodos NO PERTENECE al ciclo de vida de los componentes creados con React.Component?",
+            "respuestas": [
+                "UNSAFE_componentWillMount",
+                "componentDidMount"
+            ]
+        },
+        {
+            "id": 6,
+            "estado": false,
+            "preg": "¿Qué requisitos / limitaciones tenemos para manejar el estado con reducers?",
+            "respuestas": [
+                "Debemos usar acciones y estados compuestos."
+            ]
+        },
+        {
+            "id": 7,
+            "estado": false,
+            "preg": "¿Cuál es la diferencia principal al ACTUALIZAR estados compuestos en React.Component (con this.setState) vs. React Hooks (con useState)?",
+            "respuestas": [
+                "No hay diferencias entre actualizar estados compuestos con clases o funciones.",
+                "Con this.setState actualizamos propiedades del objeto this.state sin afectar o borrar a las demás. Con useState siempre debemos copiar el estado \"anterior\" antes de actualizar propiedades del objeto state."
+            ]
+        },
+        {
+            "id": 8,
+            "estado": false,
+            "preg": "Si creamos un estado patito con React.useState, a su actualizador por convención lo llamaremos setPatito. ¿Cómo se llamaría el actualizador de un estado patito si lo creamos con React.useReducer?",
+            "respuestas": [
+                "dispatch"
+            ]
+        },
+        {
+            "id": 9,
+            "estado": true,
+            "preg": "¿Para qué sirven los action creators?",
+            "respuestas": [
+                "Para guardar todos los action types en un mismo objeto y evitar errores de typos.",
+                "Para unir el código de interfaz con el código de manejo del estado."
+            ]
+        },
+        {
+            "id": 10,
+            "estado": false,
+            "preg": "¿Cuándo debemos hacer migraciones de useState a useReducer?",
+            "respuestas": [
+                "Solo cuando mejore la legibilidad, agilice el mantenimiento y no duela (tanto) hacer el cambio."
+            ]
+        }
+    ]
+}

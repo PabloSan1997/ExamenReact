@@ -99,7 +99,7 @@ class PreguntaServicio{
     async actuaizar(datos){
         fs.writeFile('./archivo/preguntas.json', JSON.stringify(datos),(error)=>{
             if(error){
-                throw new Error('Hay un error');
+                console.log('Hay un error');
             }
         });
     }
