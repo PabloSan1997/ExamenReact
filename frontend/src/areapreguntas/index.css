@@ -63,9 +63,10 @@
 }
 .contenedor .filaP .cajaP {
   width: 100%;
-  height: 30px;
+  min-height: 30px;
   display: flex;
   background: rgb(6, 20, 85);
+  padding: 5px 0;
 }
 .contenedor .filaP .cajaP .Pregunta {
   height: -webkit-fit-content;
